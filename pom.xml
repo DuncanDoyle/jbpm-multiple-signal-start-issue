@@ -50,7 +50,7 @@
 				<version>${version.org.kie}</version>
 				<scope>compile</scope>
 			</dependency>
-			
+
 			<!-- Test dependencies. -->
 			<dependency>
 				<groupId>junit</groupId>
@@ -68,6 +68,12 @@
 		<dependency>
 			<groupId>org.jbpm</groupId>
 			<artifactId>jbpm-bpmn2</artifactId>
+		</dependency>
+
+		<!-- Test dependencies -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

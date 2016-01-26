@@ -3,16 +3,17 @@ package org.jboss.ddoyle.jbpm;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.junit.Test;
 import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 
-public class Main {
+public class JbpmTest {
 	
 	private static final String PROCESS_MESSAGE_VARIABLE_NAME = "processMessage";
 	
-	
-	public static void main(String[] args) {
+	@Test
+	public void testProcess() {
 		
 		KieServices kieServices = KieServices.Factory.get();
 		KieContainer kieContainer = kieServices.getKieClasspathContainer();
@@ -25,7 +26,7 @@ public class Main {
 		kieSession.startProcess("multi-signal-start-process", processStartParams);
 		
 		//Validate the outcome.
-		//TODO: Need to build a unit-test for this.
+		//TODO: Need to actually create a proper assertion here.
 	}
 	
 
